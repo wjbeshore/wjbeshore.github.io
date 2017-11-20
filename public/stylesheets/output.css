@@ -1,6 +1,6 @@
 body, html {
   font: 100% "Open Sans", sans-serif;
-  background-color: #d7cec7;
+  background-color: #565656;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -9,9 +9,6 @@ body, html {
   /*background-image: url("https://static.pexels.com/photos/7480/sky-night-stars.jpg");*/
   background-repeat: no-repeat;
   background-attachment: fixed; }
-
-#cursor {
-  display: inline; }
 
 #lead {
   line-height: 1;
@@ -24,7 +21,7 @@ body, html {
   color: #76323f; }
 
 .techs {
-  background-color: #ad9a8c;
+  background-color: #d7cec7;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   opacity: 1; }
@@ -32,11 +29,11 @@ body, html {
 .overpic {
   color: black;
   opacity: 1;
-  text-align: left;
-  margin-top: 90px;
+  text-align: center;
+  margin-top: 20px;
   opacity: 1; }
   .overpic h1 {
-    font-size: 180px;
+    font-size: 160px;
     margin-top: 0px; }
   .overpic a {
     color: black; }
@@ -63,7 +60,7 @@ body, html {
   border-radius: 4px 0 0 4px; }
 
 .displayproj {
-  background-color: #ad9a8c;
+  background-color: #d7cec7;
   border-radius: 4px;
   margin-bottom: 30px;
   float: left;
@@ -74,8 +71,8 @@ body, html {
   margin-top: 60px; }
 
 #about {
-  background-color: #ad9a8c;
-  color: #565656;
+  background-color: #d7cec7;
+  color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 30px;
   border-radius: 4px; }
@@ -99,12 +96,12 @@ i {
   height: 100%; }
 
 .projectex {
-  color: #565656;
+  color: black;
   padding-left: 30px; }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #565656;
+  background-color: black;
   margin: 0;
   height: 51px;
   z-index: 2;
@@ -119,7 +116,7 @@ i {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  background-color: #565656; }
+  background-color: black; }
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -134,15 +131,18 @@ i {
 .topnav .icon {
   display: none; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 930px) {
   .topnav a:not(:first-child) {
     display: none; }
 
   .topnav a.icon {
     float: right;
-    display: block; } }
+    display: block; }
+
+  #lead {
+    font-size: 130px; } }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 930px) {
   .topnav.responsive {
     position: relative; }
 
@@ -284,10 +284,7 @@ i {
     width: 100%; }
 
   .picture {
-    height: 550px; }
-
-  #lead {
-    font-size: 100px; } }
+    height: 550px; } }
 @media all and (max-width: 650px) {
   .col-1 {
     width: 50%; }

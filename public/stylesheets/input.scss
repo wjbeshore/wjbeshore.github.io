@@ -6,7 +6,7 @@ $tan: darken($grain, 20%)/*#c09f80*/;
 
 body, html {
   font: 100% $font-stack;
-  background-color: $grain;
+  background-color: $blackboard;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -17,9 +17,7 @@ body, html {
     background-attachment: fixed;
 }
 
-#cursor{
-  display:inline;
-}
+
 
 #lead{
   line-height: 1;
@@ -36,7 +34,7 @@ body, html {
 }
 
 .techs{
-  background-color: $tan;
+  background-color: $grain;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   opacity:1;
@@ -47,11 +45,11 @@ body, html {
 
   color:darken(black, 50%);
   opacity: 1;
-  text-align: left;
-  margin-top: 90px;
+  text-align: center;
+  margin-top: 20px;
   opacity:1;
   h1{
-      font-size:180px;
+      font-size:160px;
       margin-top: 0px;
 
   }
@@ -91,7 +89,7 @@ body, html {
 
 .displayproj {
 
-  background-color: $tan;
+  background-color: $grain;
   border-radius: 4px;
   margin-bottom: 30px;
   float: left;
@@ -104,8 +102,8 @@ body, html {
 }
 
 #about {
-    background-color: $tan;
-    color: $blackboard;
+    background-color: $grain;
+    color: black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 30px;
     border-radius: 4px;
@@ -137,18 +135,18 @@ i{
 }
 
 .projectex{
-  color: $blackboard;
+  color: black;
   padding-left: 30px;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: $blackboard;
+    background-color: black;
     margin: 0;
     height: 51px;
     z-index: 2;
     width: 100%;
-    
+
 }
 
 /* Style the links inside the navigation bar */
@@ -160,7 +158,7 @@ i{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    background-color: $blackboard;
+    background-color: black;
 }
 
 /* Change the color of links on hover */
@@ -180,16 +178,19 @@ i{
     display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 930px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
+  #lead {
+  font-size:130px;
+}
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 930px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -344,9 +345,7 @@ i{
 
 
 
-          #lead {
-          font-size:100px;
-        }
+
 
 
     }
