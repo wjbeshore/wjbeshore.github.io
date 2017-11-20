@@ -12,6 +12,22 @@ body, html {
   margin: 0;
   padding: 0;
   border: 0;
+  /*background-image: url("https://static.pexels.com/photos/7480/sky-night-stars.jpg");*/
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#cursor{
+  display:inline;
+}
+
+#lead{
+  line-height: 1;
+  margin: 10px;
+}
+
+.aboutme{
+  border-radius: 4px;
 }
 
 [class*='devicon-'] {
@@ -22,20 +38,22 @@ body, html {
 .techs{
   background-color: $tan;
   text-align: center;
-  box-shadow: 10px 10px 5px #888888;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity:1;
 }
 
 .overpic {
 
 
-  color: black;
+  color:darken(black, 50%);
   opacity: 1;
-  position: absolute;
   text-align: left;
+  margin-top: 90px;
+  opacity:1;
   h1{
       font-size:180px;
-      margin: 0;
-      line-height: 1;
+      margin-top: 0px;
+
   }
   a{
     color: black;
@@ -48,13 +66,19 @@ body, html {
   margin: 0 auto;
 }
 
-#picture{
-    background-image: url("https://pbs.twimg.com/profile_images/620759411296866304/S4mJ8fiw.jpg");
-  opacity: 0.5;
+.mypic {
+  border-radius: 0 4px 4px 0;
+}
+
+.picture{
+
     height: 700px;
     width: 100%;
   font-size: 40px;
   border-radius: 4px;
+    h1{
+      display: inline;
+    }
 }
 
 .project{
@@ -72,7 +96,7 @@ body, html {
   margin-bottom: 30px;
   float: left;
    width: 100%;
-   box-shadow: 10px 10px 5px #888888;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .projects {
@@ -82,7 +106,7 @@ body, html {
 #about {
     background-color: $tan;
     color: $blackboard;
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 30px;
     border-radius: 4px;
     h1{
@@ -120,10 +144,12 @@ i{
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: $blackboard;
-    margin: 0 0 30px 0;
+    margin: 0;
     height: 51px;
     z-index: 2;
     width: 100%;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
 }
 
 /* Style the links inside the navigation bar */
@@ -247,7 +273,7 @@ i{
   position: relative;
   width: 100%;
   height: 400px;
-  background-color: #fff;
+  background-color: $grain;
   transform: translateY(100%)
     translateY(-88px)
     translateZ(0);
@@ -284,7 +310,7 @@ i{
   padding: 24px;
   font-size: 40px;
   line-height: 1;
-  color: $blackboard;
+  color: $oxblood;
   text-align: center;
   border-radius: 0 0 0 4px;
 }
@@ -312,13 +338,15 @@ i{
         .col-7{ width: 100%;    }
         .col-8{ width: 100%;    }
 
-
+        .picture{
+          height: 550px;
+        }
 
 
 
 
           #lead {
-          font-size:140px;
+          font-size:100px;
         }
 
 
@@ -335,6 +363,9 @@ i{
         .col-7{ width: 100%;    }
         .col-8{ width: 100%;    }
         #lead{
-          font-size: 90px;
+          font-size: 70px;
+        }
+        .picture{
+          height: 400px;
         }
     }
