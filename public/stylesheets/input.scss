@@ -60,7 +60,7 @@ body, html {
   color:darken(black, 50%);
   opacity: 1;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 72px;
   opacity:1;
   h1{
       font-size:160px;
@@ -182,6 +182,9 @@ i{
     height: 51px;
     z-index: 2;
     width: 100%;
+    position: fixed;
+    top: 0;
+
 
 }
 
@@ -214,7 +217,7 @@ i{
     display: none;
 }
 
-@media all and (max-width: 930px) {
+@media screen and (max-width: 930px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -245,7 +248,7 @@ i{
         width : 100%;
         max-width : 1200px;
         box-sizing: border-box;
-        margin: 0 auto;
+        margin: 45px auto 0 auto;
 
       overflow: hidden;
     }
@@ -421,12 +424,12 @@ i{
         .col-8{ width: 100%;    }
 
         .picture{
-          height: 900px;
+          height: 500px;
           h1{
-            font-size: 40px;
+            font-size: 50px;
           }
           h2{
-            font-size: 30px;
+            font-size: 40px;
           }
         }
     }
