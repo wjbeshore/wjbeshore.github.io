@@ -358,6 +358,10 @@ i {
     width: 100%; }
 
   .picture {
-    height: 400px; } }
+    height: 750px; }
+    .picture h1 {
+      font-size: 40px; }
+    .picture h2 {
+      font-size: 30px; } }
 
 /*# sourceMappingURL=output.css.map */
