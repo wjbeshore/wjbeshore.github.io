@@ -10,12 +10,24 @@ body, html {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-#lead {
-  line-height: 1;
-  margin: 10px; }
+.lead {
+  line-height: 1; }
 
 .aboutme {
-  border-radius: 4px; }
+  border-radius: 4px;
+  margin-top: 40px;
+  background-color: #d7cec7;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  font-size: 15px; }
+  .aboutme a {
+    color: black;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 300px; }
 
 [class*='devicon-'] {
   color: #76323f; }
@@ -46,47 +58,61 @@ body, html {
 .mypic {
   border-radius: 0 4px 4px 0; }
 
+a {
+  text-decoration: none;
+  position: relative;
+  /*
+    webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    -ms-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+  */ }
+  a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #76323f;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s;
+    transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s; }
+  a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+
 .picture {
   height: 700px;
   width: 100%;
+  border-radius: 4px;
   font-size: 40px;
-  border-radius: 4px; }
+  margin-top: 5px; }
   .picture h1 {
     display: inline; }
 
 .project {
   background-image: url("https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAxPAAAAJGVjNjZjNTk2LWQxYmQtNGMxMS05M2Y1LTAwMTA3OGJmZjY0Mg.jpg");
   height: 400px;
-  border-radius: 4px 0 0 4px; }
+  border-radius: 4px 0 0 4px;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .displayproj {
-  background-color: #d7cec7;
   border-radius: 4px;
-  margin-bottom: 30px;
   float: left;
-  width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  width: 100%; }
 
 .projects {
   margin-top: 60px; }
 
-#about {
-  background-color: #d7cec7;
-  color: black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 30px;
-  border-radius: 4px; }
-  #about h1 {
-    margin: 25px 25px 0 25px;
-    border-radius: 4px; }
-  #about h2 {
-    margin: 15px 25px 25px 25px;
-    border-radius: 20px; }
-  #about a {
-    text-decoration: none;
-    color: #76323f; }
-  #about a:hover {
-    color: #401b22; }
+#aboutcontent {
+  margin: 10px;
+  font-size: 15px; }
 
 i {
   font-size: 90px; }
@@ -218,6 +244,18 @@ i {
   transition: transform 0.5s ease-out;
   border-radius: 0 0 0 4px; }
 
+#todo {
+  background-image: url("../pics/todolist.jpg");
+  background-position: center; }
+
+#blogapp {
+  background-image: url("../pics/blogapp.jpg");
+  background-position: center; }
+
+#yelpplebees {
+  background-image: url("../pics/yelpplebees.jpg");
+  background-position: center; }
+
 .info:before {
   z-index: -1;
   display: block;
@@ -226,7 +264,6 @@ i {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-image: url(https://source.unsplash.com/collection/905011/1000x1000);
   filter: blur(10px);
   background-size: cover;
   opacity: 0.25;
@@ -250,13 +287,13 @@ i {
 .description {
   margin: 0;
   padding: 0 24px 24px;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.5;
   text-align: center;
   color: #76323f;
   border-radius: 0, 0, 0, 4px; }
   .description i {
-    font-size: 30px; }
+    font-size: 25px; }
 
 @media all and (max-width: 800px) {
   .col-1 {
@@ -285,6 +322,11 @@ i {
 
   .picture {
     height: 550px; } }
+@media all and (max-width: 1000px) {
+  .picture {
+    height: 650px; }
+    .picture h1 {
+      font-size: 110px; } }
 @media all and (max-width: 650px) {
   .col-1 {
     width: 50%; }
@@ -309,9 +351,6 @@ i {
 
   .col-8 {
     width: 100%; }
-
-  #lead {
-    font-size: 70px; }
 
   .picture {
     height: 400px; } }
