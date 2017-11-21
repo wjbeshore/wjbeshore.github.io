@@ -21,7 +21,8 @@ body, html {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 30px;
   border-radius: 4px;
-  font-size: 15px; }
+  font-size: 15px;
+  padding: 10px; }
   .aboutme a {
     color: black;
     text-align: center;
@@ -321,9 +322,9 @@ i {
     width: 100%; }
 
   .picture {
-    height: 600px; }
+    height: 750px; }
     .picture h1 {
-      font-size: 60px; }
+      font-size: 50px; }
     .picture h2 {
       font-size: 40px; } }
 @media all and (max-width: 1000px) {
