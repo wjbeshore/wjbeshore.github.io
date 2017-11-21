@@ -321,7 +321,11 @@ i {
     width: 100%; }
 
   .picture {
-    height: 550px; } }
+    height: 600px; }
+    .picture h1 {
+      font-size: 60px; }
+    .picture h2 {
+      font-size: 40px; } }
 @media all and (max-width: 1000px) {
   .picture {
     height: 650px; }

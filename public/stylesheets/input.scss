@@ -389,7 +389,13 @@ i{
         .col-8{ width: 100%;    }
 
         .picture{
-          height: 550px;
+          height: 600px;
+          h1{
+            font-size: 60px;
+          }
+          h2{
+            font-size: 40px;
+          }
         }
   }
 
