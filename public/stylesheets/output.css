@@ -51,10 +51,13 @@ body, html {
   .overpic a {
     color: black; }
 
-.contact {
+.contactme {
   text-align: center;
   display: inline;
   margin: 0 auto; }
+  .contactme a {
+    color: black;
+    display: inline; }
 
 .mypic {
   border-radius: 0 4px 4px 0; }
