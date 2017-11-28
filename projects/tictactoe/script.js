@@ -80,7 +80,7 @@ function declareWinner(who){
 function checkTie(){
   if(emptySquares().length == 0){
     for(var i = 0; i < cells.length; i++){
-      cells[i].style.backgroundColor = "green";
+      cells[i].style.backgroundColor = "black";
       cells[i].removeEventListener("click", turnClick, false);
       declareWinner("Tie Game!");
     }

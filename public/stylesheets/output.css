@@ -267,6 +267,14 @@ i {
   background-image: url("../pics/yelpplebees.jpg");
   background-position: center; }
 
+#colorgame {
+  background-image: url("../pics/colorgame.jpg");
+  background-position: center; }
+
+#tictactoe {
+  background-image: url("../pics/tictactoe.jpg");
+  background-position: center; }
+
 .info:before {
   z-index: -1;
   display: block;
