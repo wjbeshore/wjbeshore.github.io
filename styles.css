@@ -177,6 +177,10 @@ footer {
     color: #ccc;
   }
 
+a {
+    text-decoration: none;
+    color: #403f48;
+}
 
 #contact{
     height: 200px;
